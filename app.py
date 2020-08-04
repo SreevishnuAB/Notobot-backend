@@ -2,6 +2,7 @@ from flask import Flask, request
 from logging.config import dictConfig
 import telegram
 from bot_handler.config.credentials import BOT_TOKEN
+import os
 
 dictConfig({
     'version': 1,
@@ -24,6 +25,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     app.logger.info(BOT_TOKEN)
+    app.logger.info(os.environ.get("BOT_TOKEN"))
     if BOT_TOKEN != None:
         return {"message": "Bot token loaded successfully"}
     else:
