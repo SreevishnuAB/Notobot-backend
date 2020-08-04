@@ -30,7 +30,7 @@ def index():
         token = os.environ.get("BOT_TOKEN")
         app.logger.info(os.environ.get("BOT_TOKEN"))
     
-    except Excpetion as e:
+    except Exception as e:
         app.logger.error(e)
 
     if token != None:
