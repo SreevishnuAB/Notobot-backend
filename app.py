@@ -26,4 +26,6 @@ def index():
     app.logger(BOT_TOKEN)
     if BOT_TOKEN != None:
         return {"message": "Bot token loaded successfully"}
-        
+
+if __name__ == "main":
+    app.run(threaded=True)
