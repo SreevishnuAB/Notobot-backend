@@ -24,9 +24,16 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    app.logger.info(BOT_TOKEN)
-    app.logger.info(os.environ.get("BOT_TOKEN"))
-    if BOT_TOKEN != None:
+    app.logger.info("Hello, world")
+    # app.logger.info(BOT_TOKEN)
+    try:
+        token = os.environ.get("BOT_TOKEN")
+        app.logger.info(os.environ.get("BOT_TOKEN"))
+    
+    except Excpetion as e:
+        app.logger.error(e)
+
+    if token != None:
         return {"message": "Bot token loaded successfully"}
     else:
         return {"error": "Something went wrong"}
