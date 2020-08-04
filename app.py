@@ -41,4 +41,4 @@ def index():
         return {"error": "Something went wrong"}
 
 if __name__ == "main":
-    app.run(threaded=True)
+    app.run(threaded=True, host="0.0.0.0", port=os.environ.get("PORT", 5000))
