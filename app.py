@@ -24,6 +24,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
+    print("Hello World")
     app.logger.info("Hello, world")
     # app.logger.info(BOT_TOKEN)
     try:
@@ -31,7 +32,8 @@ def index():
         app.logger.info(os.environ.get("BOT_TOKEN"))
     
     except Exception as e:
-        app.logger.error(e)
+        app.logger.info(e)
+        print(e)
 
     if token != None:
         return {"message": "Bot token loaded successfully"}
