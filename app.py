@@ -1,7 +1,7 @@
 from flask import Flask, request
 from logging.config import dictConfig
 import telegram
-from bot_handler.config.credentials import BOT_TOKEN
+# from bot_handler.config.credentials import BOT_TOKEN
 import os
 
 dictConfig({
