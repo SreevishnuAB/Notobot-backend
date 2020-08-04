@@ -1,7 +1,7 @@
 from flask import Flask, request
 # from logging.config import dictConfig
 import telegram
-# from bot_handler.config.credentials import BOT_TOKEN
+from bot_handler.config.credentials import BOT_TOKEN
 import os
 
 # dictConfig({
@@ -25,17 +25,8 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     print("Hello World")
-    app.logger.info("Hello, world")
-    # app.logger.info(BOT_TOKEN)
-    try:
-        token = os.environ.get("BOT_TOKEN")
-        app.logger.info(os.environ.get("BOT_TOKEN"))
-    
-    except Exception as e:
-        app.logger.info(e)
-        print(e)
 
-    if token != None:
+    if BOT_TOKEN != None:
         return {"message": "Bot token loaded successfully"}
     else:
         return {"error": "Something went wrong"}
