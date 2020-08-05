@@ -27,6 +27,7 @@ def bot_controller():
     print(request.get_json(force=True))
     update = telegram.Update.de_json(request.get_json(force=True), bot)
     print(f"Update: {update}")
+    return "OK"
 
 if __name__ == "main":
     app.run(threaded=True, host="0.0.0.0", port=os.environ.get("PORT", 5000))
