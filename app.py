@@ -27,6 +27,12 @@ def bot_controller():
     # print(request.get_json(force=True))
     update = telegram.Update.de_json(request.get_json(force=True), bot)
     print(f"Update: {update}")
+    reply = f"Hey there, {update.message.chat.first_name}" if update.message.text == "/start" else "Noted"
+    bot.sendMessage(
+        chat_id=update.message.chat.id,
+        text=reply,
+        reply_to_message_id=update.message.message_id
+        )
     return "OK"
 
 if __name__ == "main":
