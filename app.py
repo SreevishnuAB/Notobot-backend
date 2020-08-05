@@ -26,7 +26,7 @@ def index():
 def bot_controller():
     # print(request.get_json(force=True))
     update = telegram.Update.de_json(request.get_json(force=True), bot)
-    app.logger.info(f"Update: {update}")
+    print(f"Update: {update}")
     return "OK"
 
 if __name__ == "main":
