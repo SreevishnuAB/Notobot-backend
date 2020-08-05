@@ -24,9 +24,9 @@ def index():
 
 @app.route(f"/{BOT_TOKEN}", methods=["POST"])
 def bot_controller():
-    print(request.get_json(force=True))
+    # print(request.get_json(force=True))
     update = telegram.Update.de_json(request.get_json(force=True), bot)
-    print(f"Update: {update}")
+    app.logger.info(f"Update: {update}")
     return "OK"
 
 if __name__ == "main":
