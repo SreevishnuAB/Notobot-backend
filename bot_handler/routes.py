@@ -2,16 +2,16 @@ from flask import request
 import telegram
 from bot_handler.config.credentials import BOT_TOKEN
 from bot_handler.utils.setup_webhook import register_webhook
-from app import app
+from app import app_instance
 
 bot = telegram.Bot(token=BOT_TOKEN)
 
-@app.before_first_request
+@app_instance.before_first_request
 def enable_webhook():
     if not register_webhook(bot):
         print("Error: Webhook not enabled")
 
-@app.route("/")
+@app_instance.route("/")
 def index():
     print("Hello World")
 
@@ -20,7 +20,7 @@ def index():
     else:
         return {"error": "Something went wrong"}
 
-@app.route(f"/{BOT_TOKEN}", methods=["POST"])
+@app_instance.route(f"/{BOT_TOKEN}", methods=["POST"])
 def bot_controller():
     # print(request.get_json(force=True))
     update = telegram.Update.de_json(request.get_json(force=True), bot)
