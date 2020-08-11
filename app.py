@@ -1,8 +1,10 @@
-from flask import request
+import os
+from flask import Flask, request
 import telegram
 from bot_handler.config.credentials import BOT_TOKEN
 from bot_handler.utils.setup_webhook import register_webhook
-from setup import app
+
+app = Flask(__name__)
 
 bot = telegram.Bot(token=BOT_TOKEN)
 
