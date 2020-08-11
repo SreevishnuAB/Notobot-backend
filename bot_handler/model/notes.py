@@ -7,10 +7,10 @@ class Note(Base):
     __tablename__ = "notes"
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid4)
-    text = Column(String)
+    note_text = Column(String)
     note_type = Column(String, default="text")
     file_id = Column(UUID(as_uuid=True), default=None)
-    user = Column(String)
+    user_name = Column(String)
 
     def __repr__(self):
-        return f"<Note(id={self.id}, text={self.text}, note_type={self.note_type}, file_id={self.file_id}, user={self.user})>"
+        return f"<Note(id={self.id}, note_text={self.text}, note_type={self.note_type}, file_id={self.file_id}, user_name={self.user})>"
