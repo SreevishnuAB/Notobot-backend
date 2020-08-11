@@ -3,7 +3,7 @@ from flask import Flask, request
 import telegram
 from bot_handler.config.credentials import BOT_TOKEN
 from bot_handler.utils.setup_webhook import register_webhook
-
+from bot_handler.config.db import Base, engine
 app = Flask(__name__)
 
 bot = telegram.Bot(token=BOT_TOKEN)
@@ -11,6 +11,7 @@ bot = telegram.Bot(token=BOT_TOKEN)
 
 @app.before_first_request
 def enable_webhook():
+    Base.metadata.create_all(engine)
     if not register_webhook(bot):
         print("Error: Webhook not enabled")
 
