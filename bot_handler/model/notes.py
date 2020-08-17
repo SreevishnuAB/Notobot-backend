@@ -11,7 +11,7 @@ class Note(Base):
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid4)
     note_text = Column(String)
     note_type = Column(String, default="text")
-    file_id = Column(UUID(as_uuid=True), default=None)
+    file_id = Column(String, default=None)
     file_type = Column(String)
     user_name = Column(String)
 
