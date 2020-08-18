@@ -16,4 +16,4 @@ class Note(Base):
     user_name = Column(String)
 
     def __repr__(self):
-        return f"<Note(id={self.id}, note_text={self.note_text}, note_type={self.note_type}, file_id={self.file_id}, file_type={self.file_type},user_name={self.user})>"
+        return f"<Note(id={self.id}, note_text={self.note_text}, note_type={self.note_type}, file_id={self.file_id}, file_type={self.file_type},user_name={self.user_name})>"
