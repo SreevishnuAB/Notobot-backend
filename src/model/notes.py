@@ -3,7 +3,7 @@ from sqlalchemy.dialects.postgresql import UUID
 from uuid import uuid4
 
 from sqlalchemy.sql.elements import CollationClause
-from bot_handler.config.db import Base
+from src.config.db import Base
 
 class Note(Base):
     __tablename__ = "notes"

@@ -1,0 +1,207 @@
+{
+    "text": {
+        "update_id": 875960607, 
+        "message": {
+            "message_id": 17, 
+            "date": 1597700716, 
+            "chat": {
+                "id": 451620457, 
+                "type": "private", 
+                "username": "SreeV17", 
+                "first_name": "Sree", 
+                "last_name": "vishnu"
+            }, 
+            "text": "Hey", 
+            "entities": [], 
+            "caption_entities": [], 
+            "photo": [], 
+            "new_chat_members": [], 
+            "new_chat_photo": [],  
+            "from": {
+                "id": 451620457, 
+                "first_name": "Sree", 
+                "last_name": "vishnu", 
+                "username": "SreeV17",
+                "language_code": "en"
+            }
+        }
+    },
+    "photoWithoutCaption": {
+        "update_id": 875960608, 
+        "message": {
+            "message_id": 19,
+            "date": 1597701137,
+            "chat": {
+                "id": 451620457,
+                "type": "private", 
+                "username": "SreeV17", 
+                "first_name": "Sree", 
+                "last_name": "vishnu"
+            }, 
+            "entities": [], 
+            "caption_entities": [], 
+            "photo": [
+                {
+                    "file_id": "AgACAgUAAxkBAAMTXzr8EEzZ2nWH10EWtOiuheRnmEsAAnKqMRun69hVw9QcZvVQhmTNi2VsdAADAQADAgADbQAD8GsAAhoE", 
+                    "file_unique_id": "AQADzYtlbHQAA_BrAAI", 
+                    "width": 320, 
+                    "height": 214, 
+                    "file_size": 6825
+                },
+                {
+                    "file_id": "AgACAgUAAxkBAAMTXzr8EEzZ2nWH10EWtOiuheRnmEsAAnKqMRun69hVw9QcZvVQhmTNi2VsdAADAQADAgADeAAD8WsAAhoE", 
+                    "file_unique_id": "AQADzYtlbHQAA_FrAAI", 
+                    "width": 800, 
+                    "height": 534, 
+                    "file_size": 32708
+                }, 
+                {
+                    "file_id": "AgACAgUAAxkBAAMTXzr8EEzZ2nWH10EWtOiuheRnmEsAAnKqMRun69hVw9QcZvVQhmTNi2VsdAADAQADAgADeQAD7msAAhoE", 
+                    "file_unique_id": "AQADzYtlbHQAA-5rAAI", 
+                    "width": 1280, 
+                    "height": 854, 
+                    "file_size": 51053
+                }
+            ], 
+            "new_chat_members": [], 
+            "new_chat_photo": [], 
+            "from": {
+                "id": 451620457, 
+                "first_name": "Sree", 
+                "last_name": "vishnu",
+                "username": "SreeV17", 
+                "language_code": "en"
+            }
+        }
+    },
+    "photoWithCaption": {
+        "update_id": 875960611, 
+        "message": {
+            "message_id": 25, 
+            "date": 1597701640, 
+            "chat": {
+                "id": 451620457, 
+                "type": "private", 
+                "username": "SreeV17", 
+                "first_name": "Sree", 
+                "last_name": "vishnu"
+            }, 
+            "entities": [], 
+            "caption_entities": [], 
+            "photo": [
+                {
+                    "file_id": "AgACAgUAAxkBAAMZXzr-CMmleUX3EvrEErWxds9RIvIAAnOqMRun69hVd1kIj-0L485CBWRsdAADAQADAgADbQAD-GkAAhoE", 
+                    "file_unique_id": "AQADQgVkbHQAA_hpAAI", 
+                    "width": 320, 
+                    "height": 214, 
+                    "file_size": 6830
+                }, 
+                {
+                    "file_id": "AgACAgUAAxkBAAMZXzr-CMmleUX3EvrEErWxds9RIvIAAnOqMRun69hVd1kIj-0L485CBWRsdAADAQADAgADeAAD-WkAAhoE", 
+                    "file_unique_id": "AQADQgVkbHQAA_lpAAI", 
+                    "width": 800, 
+                    "height": 534, 
+                    "file_size": 32729
+                }, 
+                {
+                    "file_id": "AgACAgUAAxkBAAMZXzr-CMmleUX3EvrEErWxds9RIvIAAnOqMRun69hVd1kIj-0L485CBWRsdAADAQADAgADeQAD-mkAAhoE", 
+                    "file_unique_id": "AQADQgVkbHQAA_ppAAI", 
+                    "width": 1280, 
+                    "height": 854, 
+                    "file_size": 51045
+                }
+            ], 
+            "caption": "test photo",
+            "new_chat_members": [], 
+            "new_chat_photo": [], 
+            "from": {
+                "id": 451620457, 
+                "first_name": "Sree", 
+                "last_name": "vishnu", 
+                "username": "SreeV17", 
+                "language_code": "en"
+            }
+        }
+    },
+    "fileWithCaption": {
+        "update_id": 875960609, 
+        "message": {
+            "message_id": 21, 
+            "date": 1597701203, 
+            "chat": {
+                "id": 451620457, 
+                "type": "private", 
+                "username": "SreeV17", 
+                "first_name": "Sree", 
+                "last_name": "vishnu"
+            }, 
+            "entities": [], 
+            "caption_entities": [], 
+            "document": {
+                "file_id": "BQACAgUAAxkBAAMVXzr8U1tPB7q_sec_0M-w-LtrttYAAjcBAAKn69hV1UH7CTOh47QaBA", 
+                "file_unique_id": "AgADNwEAAqfr2FU", 
+                "thumb": {
+                    "file_id": "AAMCBQADGQEAAxVfOvxTW08Hur-x5z_Qz7D4u2u21gACNwEAAqfr2FXVQfsJM6HjtCEKvmx0AAMBAAdtAANHHwACGgQ", 
+                    "file_unique_id": "AQADIQq-bHQAA0cfAAI", 
+                    "width": 320, 
+                    "height": 213, 
+                    "file_size": 5982
+                },
+                "file_name": "image_2020-08-18_03-23-21.png", 
+                "mime_type": "image/png", 
+                "file_size": 363216
+            }, 
+            "photo": [], 
+            "caption": "test file", 
+            "new_chat_members": [], 
+            "new_chat_photo": [],  
+            "from": {
+                "id": 451620457, 
+                "first_name": "Sree", 
+                "last_name": "vishnu",
+                "username": "SreeV17", 
+                "language_code": "en"
+            }
+        }
+    },
+    "fileWithoutCaption": {
+        "update_id": 875960610, 
+        "message": {
+            "message_id": 23, 
+            "date": 1597701328, 
+            "chat": {
+                "id": 451620457,
+                "type": "private", 
+                "username": "SreeV17", 
+                "first_name": "Sree", 
+                "last_name": "vishnu"
+            }, 
+            "entities": [], 
+            "caption_entities": [], 
+            "document": {
+                "file_id": "BQACAgUAAxkBAAMXXzr80Pd4mUDRbovo3I4yUg0rpEgAAjgBAAKn69hVtFAGZEvecgwaBA", 
+                "file_unique_id": "AgADOAEAAqfr2FU", 
+                "thumb": {
+                    "file_id": "AAMCBQADGQEAAxdfOvzQ93iZQNFui-jcjjJSDSukSAACOAEAAqfr2FW0UAZkS95yDCEKvmx0AAMBAAdtAANHHwACGgQ", 
+                    "file_unique_id": "AQADIQq-bHQAA0cfAAI", 
+                    "width": 320, 
+                    "height": 213, 
+                    "file_size": 5982
+                }, 
+                "file_name": "image_2020-08-18_03-25-24.png", 
+                "mime_type": "image/png", 
+                "file_size": 363216
+            },
+            "photo": [], 
+            "new_chat_members": [], 
+            "new_chat_photo": [], 
+            "from": {
+                "id": 451620457, 
+                "first_name": "Sree", 
+                "last_name": "vishnu", 
+                "username": "SreeV17", 
+                "language_code": "en"
+            }
+        }
+    }
+}
