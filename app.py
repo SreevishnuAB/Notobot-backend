@@ -1,10 +1,11 @@
 import os
 from flask import Flask, request
 import telegram
+from telegram import chat
 from src.config.credentials import BOT_TOKEN
 from src.utils.setup_webhook import register_webhook
 from src.config.db import Base, engine
-from src.utils.handlers import handle_text_update
+from src.utils.handlers import handle_start, handle_text_update
 
 app = Flask(__name__)
 bot = telegram.Bot(token=BOT_TOKEN)
@@ -31,11 +32,15 @@ def bot_controller():
     update = telegram.Update.de_json(request.get_json(force=True), bot)
     print(f"Update: {update}")
     message = update.message
-    if message.text != None:
-        handle_text_update(message.text, message.chat)
+    reply = None
+    if message.text == "/start":
+        reply = handle_start(message.chat)
+    elif message.text != None:
+        
+        reply = "Noted!" if handle_text_update(message.text, message.chat) else "Oops, something went wrong!"
 
     # TODO need better reply text
-    reply = f"Hey there, {update.message.chat.first_name}" if update.message.text == "/start" else "Noted"
+    # reply = f"Hey there, {update.message.chat.first_name}" if update.message.text == "/start" else "Noted"
     bot.sendMessage(
         chat_id=update.message.chat.id,
         text=reply,
