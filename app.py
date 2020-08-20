@@ -32,7 +32,7 @@ def bot_controller():
     update = telegram.Update.de_json(request.get_json(force=True), bot)
     print(f"Update: {update}")
     # TODO handle editted messages
-    message = update.message
+    message = update.message || update.editted_message
     reply = None
     if message.text == "/start":
         reply = handle_start(message.chat)
