@@ -11,7 +11,7 @@ def handle_start(chat):
         if user.count() != 0:
             return f"You are already registered with me, {chat.first_name}. Tell me what to note!"
         else:
-            new_user = User(user_name=chat.username, chat_id=chat.id)
+            new_user = User(user_name=chat.username.lower(), chat_id=chat.id)
             print(new_user)
             session.add(new_user)
             session.commit()
