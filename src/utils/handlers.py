@@ -15,7 +15,7 @@ def handle_start(chat):
             print(new_user)
             session.add(new_user)
             session.commit()
-            return f"Hi {chat.first_name}! You can start sending me notes!"
+            return f"Hi {chat.first_name}! You can start sending me notes now!"
     except Exception as e:
         print(e)
         return "Oops, someting went wrong!"
