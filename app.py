@@ -31,6 +31,7 @@ def bot_controller():
     # print(request.get_json(force=True))
     update = telegram.Update.de_json(request.get_json(force=True), bot)
     print(f"Update: {update}")
+    # TODO handle editted messages
     message = update.message
     reply = None
     if message.text == "/start":

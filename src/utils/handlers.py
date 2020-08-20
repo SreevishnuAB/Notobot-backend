@@ -23,7 +23,7 @@ def handle_start(chat):
         session.close()
 
 
-def handle_text_update(text, chat):
+def handle_text_note(text, chat):
     text_note = Note(note_text=text, chat_id=chat.id)
     print(text_note)
     session = Session()

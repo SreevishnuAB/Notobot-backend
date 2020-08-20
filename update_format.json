@@ -203,5 +203,33 @@
                 "language_code": "en"
             }
         }
+    },
+    "edittedText": {
+        "update_id": 875960627, 
+        "edited_message": {
+            "message_id": 53, 
+            "date": 1597884331, 
+            "chat": {
+                "id": 451620457, 
+                "type": "private", 
+                "username": "SreeV17", 
+                "first_name": "Sree", 
+                "last_name": "vishnu"
+            }, 
+            "edit_date": 1597884351, 
+            "text": "Heyyo",
+            "entities": [], 
+            "caption_entities": [], 
+            "photo": [], 
+            "new_chat_members": [], 
+            "new_chat_photo": [], 
+            "from": {
+                "id": 451620457, 
+                "first_name": "Sree", 
+                "last_name": "vishnu", 
+                "username": "SreeV17", 
+                "language_code": "en"
+            }
+        }
     }
 }
