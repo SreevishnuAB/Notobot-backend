@@ -11,11 +11,11 @@ app = Flask(__name__)
 bot = telegram.Bot(token=BOT_TOKEN)
 
 
-@app.before_first_request
-def enable_webhook():
-    Base.metadata.create_all(engine)
-    if not register_webhook(bot):
-        print("Error: Webhook not enabled")
+# @app.before_first_request
+# def enable_webhook():
+#     Base.metadata.create_all(engine)
+#     if not register_webhook(bot):
+#         print("Error: Webhook not enabled")
 
 @app.route("/")
 def index():
