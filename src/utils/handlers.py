@@ -7,8 +7,8 @@ def handle_start(chat):
     session = Session()
     try:
         user = session.query(User).filter_by(user_name=chat.username.lower())
-        print(len(user), user)
-        if len(user) != 0:
+        print(user.count(), list(user))
+        if user.count() != 0:
             return f"You are already registered with me, {chat.first_name}. Tell me what to note!"
         else:
             new_user = User(user_name=chat.username, chat_id=chat.id)
