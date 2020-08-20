@@ -16,8 +16,8 @@ class Note(Base):
     file_id = Column(String, default=None)
     file_type = Column(String)
     chat_id = Column(Integer, ForeignKey("users.chat_id"))
-    created_on = Column(DateTime(timezone=True), nullable=False, server_default=func.now)
-    updated_on = Column(DateTime(timezone=True), nullable=False, server_default=func.now, server_onupdate=func.now)
+    created_on = Column(DateTime(timezone=True), nullable=False, default=func.now())
+    updated_on = Column(DateTime(timezone=True), nullable=False, default=func.now(), onupdate=func.now())
 
     def __repr__(self):
         return f"<Note(id={self.id}, note_text={self.note_text}, note_type={self.note_type}, file_id={self.file_id}, file_type={self.file_type}, chat_id={self.chat_id})>"
